@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 40px;
+        letter-spacing: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="num"></p>
+  </body>
+</html>
+<script>
+  function randomNumber(n) {
+    let number = "";
+
+    for (let i = 0; i < n; i++) {
+      num = Math.floor(Math.random() * 10);
+      number += num;
+    }
+
+    document.getElementById("num").innerHTML = number;
+  }
+
+  randomNumber(10);
+</script>
