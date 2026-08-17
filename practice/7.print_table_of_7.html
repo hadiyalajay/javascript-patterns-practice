@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <p id="num"></p>
-  </body>
+  <body></body>
 </html>
 <script>
-  let n = prompt("Enter a number");
+  let n = 7;
   let table = "";
 
   for (let i = 1; i <= 10; i++) {
     table += `${n} * ${i} = ${n * i}`;
-
-    table += "<br/>";
-    table += "<br/>";
+    table += "\n";
+    table += "\n";
   }
 
-  document.getElementById("num").innerHTML = table;
+  console.log(table);
 </script>
